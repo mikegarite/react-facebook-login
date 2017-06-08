@@ -105,9 +105,9 @@
                             status: e.status
                         })
                     }, n.checkLoginAfterRefresh = function(e) {
-                        // "connected" === e.status ? n.checkLoginState(e) : window.FB.login(function(e) {
-                        //     return n.checkLoginState(e)
-                        // }, !0)
+                        
+                            return n.checkLoginState(e)
+                        
                     }, n.click = function(e) {
                         if (n.state.isSdkLoaded && !n.state.isProcessing && !n.props.isDisabled) {
                             n.setState({
